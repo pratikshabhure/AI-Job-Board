@@ -225,5 +225,4 @@ CORS origins are dynamically resolved in [main.py](file:///c:/Users/samar/Downlo
 ## 📄 License
 This project is created for evaluation and demonstration purposes.
 
-**Built with ❤️ for a modern recruiting experience.**#   A I - J o b - B o a r d  
- 
+**Built with ❤️ for a modern recruiting experience.**#
