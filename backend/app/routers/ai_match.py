@@ -116,7 +116,8 @@ async def match_jobs(request: MatchRequest, db: Session = Depends(get_db)):
             ))
 
         print(f"[AI-MATCH] Returning {len(results)} matches with {'AI' if ai_explanations_used else 'fallback'} explanations")
-        return results
+        return results 
+    # done
 
     except Exception as e:
         print(f"[AI-MATCH] Error: {e}")

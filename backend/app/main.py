@@ -69,6 +69,9 @@ app.include_router(applications_router)
 app.include_router(dashboard_router)
 app.include_router(ai_match_router)
 
+@app.get("/")
+def home():
+    return {"message": "API is running"}
 
 @app.get("/health")
 def health_check():
