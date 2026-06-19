@@ -27,16 +27,22 @@ A premium, full-stack job board application featuring real-time job application 
 - **Application Pipeline:** Track candidates applying for jobs in real time.
 - **Dynamic Action Workflows:** Review applications and shortlist or reject candidates dynamically.
 - **Analytics & Charts:** Interactive graphs displaying applications per job, application status distribution, and top skills using Recharts.
+- <img width="959" height="502" alt="image" src="https://github.com/user-attachments/assets/ed780ed5-a9be-44a1-a7e3-a10b0521264f" />
+
 
 ### Candidate Dashboard
 - **Personalized Accounts:** Log in to update candidate profiles, preferred roles, domains, and education.
 - **Search & Filters:** Real-time client-side search filtering by skills, location, experience, and domain.
 - **Live Tracking:** Track all your job applications dynamically (Applied → Shortlisted → Rejected) as updated by admins.
 - **AI-Powered Matching:** Describe your ideal job using natural language, and receive a compatibility score (%) with detailed AI explanations and match reasons.
+- <img width="958" height="500" alt="image" src="https://github.com/user-attachments/assets/0e5e78ce-a7d1-4e44-83b8-1df27d90828a" />
+
 
 ### Hybrid AI Matching System
 - **LLM-Enhanced:** Parses candidate preferences and matches them against job descriptions using the Groq API.
 - **Deterministic Fallback:** Robust rule-based scoring (skill overlap, domain, location) operates seamlessly even if the external AI API is offline.
+- <img width="956" height="503" alt="image" src="https://github.com/user-attachments/assets/a383b7bd-a07a-4d60-9638-28b98a51c1b3" />
+
 
 ---
 
