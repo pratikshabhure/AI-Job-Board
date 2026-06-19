@@ -1,10 +1,6 @@
 # 💼 AI Job Board with Candidate Matching
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![Groq AI](https://img.shields.io/badge/Groq_Cloud_AI-F05032?style=for-the-badge&logo=git&logoColor=white)](https://groq.com/)
-[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
+
 
 A premium, full-stack job board application featuring real-time job application tracking and **AI-powered candidate-to-job matching** using LLMs. Built using a robust FastAPI Python backend and a highly responsive React/Vite frontend.
 
@@ -18,10 +14,8 @@ A premium, full-stack job board application featuring real-time job application 
 4. [Folder Structure](#-folder-structure)
 5. [Getting Started & Setup](#-getting-started--setup)
 6. [Demo Accounts & Credentials](#-demo-accounts--credentials)
-7. [Render Deployment Guide](#-render-deployment-guide)
-8. [CORS Configuration](#-cors-configuration)
-9. [Future Enhancements](#-future-enhancements)
-10. [License](#-license)
+7. [Future Enhancements](#-future-enhancements)
+
 
 ---
 
@@ -175,43 +169,6 @@ The system provides fully-seeded profiles to test candidate E2E application trac
 | Role | Username / Email | Password | Allowed Actions |
 | :--- | :--- | :--- | :--- |
 | **Company Admin** | `admin@aijobboard.com` | `Admin@123!` | Post/Edit jobs, view all applicants, update status (Shortlist/Reject) |
-| **Candidate 1** | `rahul.sharma@email.com` | `Candidate@123!` | Browse/apply to jobs, run AI matches, track application pipeline |
-| **Candidate 2** | `priya.patel@email.com` | `Candidate@123!` | Browse/apply to jobs, run AI matches, track application pipeline |
-| **Candidate 3** | `amit.kumar@email.com` | `Candidate@123!` | Browse/apply to jobs, run AI matches, track application pipeline |
-
----
-
-## ☁️ Render Deployment Guide
-
-### Deploying the FastAPI Backend (Web Service)
-1. Select **New Web Service** on Render.
-2. Select your repository, set the **Root Directory** to `backend`.
-3. Select **Python** runtime.
-4. Set **Build Command**: `pip install -r requirements.txt`.
-5. Set **Start Command**: `python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
-6. Add the following **Environment Variables**:
-   - `GROQ_API_KEY`: *[Your Groq Key]*
-   - `GROQ_MODEL`: `llama-3.1-8b-instant`
-   - `DATABASE_URL`: `sqlite:///./job_board.db` (For production, link to a hosted PostgreSQL instance)
-   - `ALLOWED_ORIGINS`: *[Your deployed Frontend URL]*
-
-### Deploying the React Frontend (Static Site)
-1. Select **New Static Site** on Render.
-2. Set the **Root Directory** to `frontend`.
-3. Set **Build Command**: `pnpm install && pnpm run build` (or `npm install && npm run build`).
-4. Set **Publish Directory**: `dist`.
-5. Add **Environment Variable**:
-   - `VITE_API_URL`: *[Your deployed Backend URL]*
-6. Add a **Rewrite Rule** in the service settings to allow clean React Router refreshes:
-   - **Source**: `/*`
-   - **Destination**: `/index.html`
-   - **Action**: `Rewrite`
-
----
-
-## 🔒 CORS Configuration
-
-CORS origins are dynamically resolved in [main.py](file:///c:/Users/samar/Downloads/KPITech/backend/app/main.py) via the `ALLOWED_ORIGINS` environment variable. In production, ensure this is set to your frontend's live URL (e.g. `https://my-job-board.onrender.com`) to allow safe data transmission without browser blockades.
 
 ---
 
@@ -222,7 +179,6 @@ CORS origins are dynamically resolved in [main.py](file:///c:/Users/samar/Downlo
 
 ---
 
-## 📄 License
-This project is created for evaluation and demonstration purposes.
+## 📄 Author
 
-**Built with ❤️ for a modern recruiting experience.**#
+Developed by Pratiksha Bhure
