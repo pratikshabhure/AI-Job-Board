@@ -1,4 +1,4 @@
-# 💼 AI Job Board with Candidate Matching
+# AI Job Board with Candidate Matching
 
 
 
@@ -6,7 +6,7 @@ A premium, full-stack job board application featuring real-time job application 
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 1. [Key Features](#-key-features)
 2. [Tech Stack](#%EF%B8%8F-tech-stack)
@@ -15,31 +15,32 @@ A premium, full-stack job board application featuring real-time job application 
 5. [Getting Started & Setup](#-getting-started--setup)
 6. [Demo Accounts & Credentials](#-demo-accounts--credentials)
 7. [Future Enhancements](#-future-enhancements)
+8. Author
 
 
 ---
 
-## 🌟 Key Features
+## 1] Key Features
 
-### 🏢 Company Admin Dashboard
+### Company Admin Dashboard
 - **Create & Manage Listings:** Create, edit, and control status (Open/Closed) of job posts.
 - **Application Pipeline:** Track candidates applying for jobs in real time.
 - **Dynamic Action Workflows:** Review applications and shortlist or reject candidates dynamically.
 - **Analytics & Charts:** Interactive graphs displaying applications per job, application status distribution, and top skills using Recharts.
 
-### 👤 Candidate Dashboard
+### Candidate Dashboard
 - **Personalized Accounts:** Log in to update candidate profiles, preferred roles, domains, and education.
 - **Search & Filters:** Real-time client-side search filtering by skills, location, experience, and domain.
 - **Live Tracking:** Track all your job applications dynamically (Applied → Shortlisted → Rejected) as updated by admins.
 - **AI-Powered Matching:** Describe your ideal job using natural language, and receive a compatibility score (%) with detailed AI explanations and match reasons.
 
-### 🧠 Hybrid AI Matching System
+### Hybrid AI Matching System
 - **LLM-Enhanced:** Parses candidate preferences and matches them against job descriptions using the Groq API.
 - **Deterministic Fallback:** Robust rule-based scoring (skill overlap, domain, location) operates seamlessly even if the external AI API is offline.
 
 ---
 
-## 🛠️ Tech Stack
+## 2] Tech Stack
 
 ### Frontend
 - **Framework:** React 18 (Vite)
@@ -56,7 +57,7 @@ A premium, full-stack job board application featuring real-time job application 
 
 ---
 
-## 🌐 System Architecture
+## 3] System Architecture
 
 ```mermaid
 graph TD
@@ -71,7 +72,7 @@ graph TD
 
 ---
 
-## 📁 Folder Structure
+## 4] Folder Structure
 
 ```
 .
@@ -100,7 +101,7 @@ graph TD
 
 ---
 
-## 🚀 Getting Started & Setup
+## 5] Getting Started & Setup
 
 ### Prerequisites
 - **Python 3.11+** installed
@@ -162,7 +163,7 @@ graph TD
 
 ---
 
-## 🔑 Demo Accounts & Credentials
+## 6] Demo Accounts & Credentials
 
 The system provides fully-seeded profiles to test candidate E2E application tracking and admin pipelines out-of-the-box.
 
@@ -172,13 +173,13 @@ The system provides fully-seeded profiles to test candidate E2E application trac
 
 ---
 
-## 🚀 Future Enhancements
+## 7] Future Enhancements
 - **JWT Auth Upgrade:** Migrate the mock session provider to JWT headers with automated token refresh cycles.
 - **Resume Uploading:** Parse PDF and Word resumes using OCR to automatically pre-populate candidate profiles.
 - **WebSocket Alerts:** Push immediate system notification toasts to candidate dashboards when an admin updates application states.
 
 ---
 
-## 📄 Author
+## 8] Author
 
 Developed by Pratiksha Bhure
