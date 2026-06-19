@@ -15,7 +15,7 @@ A premium, full-stack job board application featuring real-time job application 
 5. [Getting Started & Setup](#-getting-started--setup)
 6. [Demo Accounts & Credentials](#-demo-accounts--credentials)
 7. [Future Enhancements](#-future-enhancements)
-8. Author
+8. [Author](#-author)
 
 
 ---
